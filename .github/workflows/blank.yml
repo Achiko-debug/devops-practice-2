@@ -1,0 +1,16 @@
+name: First GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: გადმოწერე რეპოზიტორია
+        uses: actions/checkout@v3
+
+      - name: დაბეჭდე ტექსტი
+        run: echo "გამარჯობა DevOps სამყაროში!"
